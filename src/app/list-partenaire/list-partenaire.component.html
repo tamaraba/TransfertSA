@@ -1,0 +1,29 @@
+<h3>Liste des Partenaires</h3>
+    <table class="table">
+            <thead class="thead-dark">
+                <th scope="col">NINEA</th>
+                <th scope="col">Denom Sociale</th>
+                <th scope="col">Localité</th>
+                <th scope="col">Forme Juri</th>
+                <th scope="col">Activité</th>
+                <th scope="col">Nom Complet</th>
+                <th scope="col">Adresse Email</th>
+                <th scope="col">Téléphone</th>
+                <th scope="col">CNI</th>
+                <th scope="col">Adresse</th>
+            </thead>
+        <tbody>
+            <tr *ngFor="let partenaire of partenaires">
+              <td>{{partenaire.ninea}}</td>
+              <td>{{partenaire.denomSocial}}</td>
+              <td>{{partenaire.localite}}</td>
+              <td>{{partenaire.formJuri}}</td>
+              <td>{{partenaire.activitePrin}}</td>
+              <td>{{partenaire.nomComplet}}</td>
+              <td>{{partenaire.email}}</td>
+              <td>{{partenaire.telephone}}</td>
+              <td>{{partenaire.cni}}</td>
+              <td>{{partenaire.adresse}}</td>
+            </tr>
+          </tbody>
+    </table>
